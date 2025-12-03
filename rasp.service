@@ -1,0 +1,12 @@
+[Unit]
+Description=Service to initialize /home/rasp-soe/main
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/rasp-soe/main
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
